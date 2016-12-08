@@ -1,8 +1,15 @@
 package com.company;
 
+import garbage.ObjectGarbage;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        ObjectGarbage objectGarbage= new ObjectGarbage();
+        objectGarbage= null;
+        System.gc();
+
+
     }
 }
