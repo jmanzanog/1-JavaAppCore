@@ -9,4 +9,13 @@ public class ObjectGarbage extends  Object {
     protected  void finalize(){
         System.out.println("print before garbage collector");
     }
+
+    public static void main(String[] args) {
+
+        ObjectGarbage objectGarbage= new ObjectGarbage();
+        objectGarbage= null;
+        System.gc();
+
+
+    }
 }
