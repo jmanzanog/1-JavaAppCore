@@ -11,6 +11,7 @@ import java.util.List;
 public class Ordenar {
     public static void ordenar(){
         List<String> listaNombres = new ArrayList<>();
+        listaNombres.add("Zara");
         listaNombres.add("Dago");
         listaNombres.add("Yofana");
         listaNombres.add("Maria");
