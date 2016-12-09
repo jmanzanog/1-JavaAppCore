@@ -9,7 +9,7 @@ public class ConectionSingleton {
     private ConectionSingleton(){
 
     }
-    public static ConectionSingleton getInstanse(){
+    public static synchronized  ConectionSingleton getInstanse(){
         if (instanse==null){
             instanse= new ConectionSingleton();
         }
