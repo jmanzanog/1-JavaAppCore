@@ -23,7 +23,7 @@ public class ReadAndWriteFile {
 
     public static void write() throws IOException {
         Path path = Paths.get("resources/FileToWrite");
-        String texto = "Coders dfdsfds";
+        String texto = String.valueOf(System.currentTimeMillis());
         Files.write(path, texto.getBytes(), StandardOpenOption.APPEND);
 
     }
