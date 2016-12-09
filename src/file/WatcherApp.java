@@ -14,12 +14,11 @@ public class WatcherApp {
 
 
     public void observar() throws Exception{
+
         WatchService watcher = FileSystems.getDefault().newWatchService();
         Path dir = Paths.get("resources");
-
         dir.register(watcher, ENTRY_CREATE, ENTRY_MODIFY, ENTRY_DELETE);
         System.out.println("Iniciando observación para " + dir.getFileName());
-
 
         for(;;){
             WatchKey key;
@@ -33,8 +32,6 @@ public class WatcherApp {
 
                 //Obteniendo nombre archivo
                 Path fileName = (Path)evento.context();
-
-                //System.out.println(tipoEvento.name() + ": " + fileName);
 
                 if(tipoEvento == OVERFLOW){
                     continue;
