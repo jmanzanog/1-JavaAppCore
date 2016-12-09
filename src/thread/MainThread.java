@@ -29,5 +29,12 @@ public class MainThread {
             System.out.println("hilo Main");
         }
 
+        /* ExecutorService executorService= Executors.newFixedThreadPool(1);
+        Future<?> taFuture= executorService.submit(thread2);
+       while (taFuture.isDone()){
+            System.out.println("tarea 2 terminada");
+            break;
+        }*/
+
     }
 }
