@@ -30,6 +30,7 @@ public class ClientRestApache {
     private String result;
     private CloseableHttpClient httpClient;
     private HttpEntityEnclosingRequestBase httpRequestBase;
+    //comit test
 
     public static void main(String[] args) {
         ClientRestApache clientRestApache = new ClientRestApache(HttpPost.METHOD_NAME,ContentType.TEXT_PLAIN);
